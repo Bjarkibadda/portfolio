@@ -83,6 +83,7 @@ const myPython = document.querySelector('.python-logo-visible');
 function cardVisible(){
   $("#dj-logo").fadeTo(10000, 1)
   $("#python-logo").fadeTo(1000, 1)
+  $("#flutter-logo").fadeTo(20000, 1)
 }
 
 

@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rakkas&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap');
 
 * {
     margin: 0;
@@ -32,7 +33,7 @@
     flex-direction: column;
     height: 100%;
     padding-left:20vh;
-    font-family: 'rakkas', cursive;
+    font-family: 'Rajdhani', sans-serif;
   }
   
   .custom-navbar{
@@ -129,24 +130,41 @@
   }
 
   .django-logo-visible{
-    width:50px;
-    height: 50px;
+    width:10px;
+    height: 10px;
     position: absolute;
     left:90vh;
     top:10vh;
-    opacity: 0.0;
+    opacity: 0.0; 
   }
 
-  /* .python-logo-hidden{
-    display: none;
-    transition: .8s opacity;
-  } */
-
   .python-logo-visible{
-    width:50px;
-    height: 50px;
+    width:10px;
+    height: 10px;
     position: absolute;
     left:130vh;
     top:7vh;
     opacity: 0.0;
+  }
+
+  .flutter-logo{
+    width:15px;
+    height: 15px;
+    position: absolute;
+    left:110vh;
+    top:8vh;
+    opacity: 0.0;
+  }
+
+  .bb-logo{
+    width: 75px;
+    height: 75px;
+  }
+
+  .nav-item{
+    font-family: 'Rajdhani', sans-serif;
+  }
+
+  .navbar-nav a:hover{
+    color: #f7d69d;
   }
