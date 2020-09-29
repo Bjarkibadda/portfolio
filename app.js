@@ -1,9 +1,6 @@
  var counter = 0;
  var word_index = 0;
 
-
-
-
 //  const
 const myDjango = document.querySelector('.django-logo-visible');
 const myPython = document.querySelector('.python-logo-visible');
@@ -47,10 +44,6 @@ const myPython = document.querySelector('.python-logo-visible');
   
       // If word is complete
       if(!this.isDeleting && this.txt === fullTxt) {
-  
-        if(this.txt === fullTxt){
-          cardVisible();
-        }
         // Make pause at end
         typeSpeed = this.wait;
         // Set delete to true
@@ -73,6 +66,7 @@ const myPython = document.querySelector('.python-logo-visible');
   
   // Init App
   function init() {
+    cardVisible();
     const txtElement = document.querySelector('.type-writer');
     const words = JSON.parse(txtElement.getAttribute('data-words'));
     const wait = txtElement.getAttribute('data-wait');
@@ -81,11 +75,18 @@ const myPython = document.querySelector('.python-logo-visible');
   }
 
 function cardVisible(){
-  $("#dj-logo").fadeTo(10000, 1)
-  $("#python-logo").fadeTo(1000, 1)
-  $("#flutter-logo").fadeTo(20000, 1)
-}
+  $("#dj-logo").fadeTo(2000, 1, function(){
+    $("#dj-logo").fadeOut(3000);
+  });
+  $("#python-logo").fadeTo(2000, 1, function(){
+    $("#python-logo").fadeOut(3000);
+  })
 
+  $("#flutter-logo").fadeTo(2000, 1, function(){
+    $("#flutter-logo").fadeOut(3000);
+  })
+  console.log('test')
+}
 
 function opac(){
 }

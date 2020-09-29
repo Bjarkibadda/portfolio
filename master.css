@@ -14,10 +14,15 @@
     background-color: black;
   }
 
+  html, #card-body{
+    background-color:pink;
+    height: 100%;
+  }
+
 .home-page-container{
     width:100%;
     height:100%;
-    background: url("assets/nasa.jpg") no-repeat center center fixed;
+    background: url("https://scontent.frkv2-1.fna.fbcdn.net/v/t31.0-8/12783643_10207828975620519_6928631754186507490_o.jpg?_nc_cat=107&_nc_sid=cdbe9c&_nc_ohc=JYZ97LaqhzEAX9kpKlu&_nc_ht=scontent.frkv2-1.fna&oh=4a885cbc7fd181d21b23ec8587e3d264&oe=5F94DF97") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -133,8 +138,8 @@
     width:10px;
     height: 10px;
     position: absolute;
-    left:90vh;
-    top:10vh;
+    left:50vw;
+    top:25vh;
     opacity: 0.0; 
   }
 
@@ -142,8 +147,8 @@
     width:10px;
     height: 10px;
     position: absolute;
-    left:130vh;
-    top:7vh;
+    left:60vw;
+    top:20vh;
     opacity: 0.0;
   }
 
@@ -151,8 +156,8 @@
     width:15px;
     height: 15px;
     position: absolute;
-    left:110vh;
-    top:8vh;
+    left:70vw;
+    top:15vh;
     opacity: 0.0;
   }
 
@@ -168,3 +173,97 @@
   .navbar-nav a:hover{
     color: #f7d69d;
   }
+
+  @media only screen and (max-height: 500px) {
+    .home-page-text-container h1{
+      font-size: 16px;
+    }
+
+
+    .home-page-text-container h4{
+      font-size: 12px;
+    }
+
+    .home-page-text-container h2{
+      font-size: 15px;
+    }
+  }
+
+  @media only screen and (max-width: 680px){
+    .flutter-logo{
+      visibility: hidden;
+    }
+    .python-logo-visible{
+      visibility: hidden;
+    }
+    .django-logo-visible{
+      visibility: hidden;
+    }
+  }
+
+
+  /* about me */
+
+.about-me-container{
+    width:100%;
+    height:100%;
+    background: url("https://scontent.frkv2-1.fna.fbcdn.net/v/t31.0-8/12783643_10207828975620519_6928631754186507490_o.jpg?_nc_cat=107&_nc_sid=cdbe9c&_nc_ohc=JYZ97LaqhzEAX9kpKlu&_nc_ht=scontent.frkv2-1.fna&oh=4a885cbc7fd181d21b23ec8587e3d264&oe=5F94DF97") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color:white;
+    overflow: hidden;
+    position: relative;
+}
+
+.about-me-text{
+  position: absolute;
+  width: 80%;
+  top:60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  vertical-align: center;
+
+  /* .vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  } */
+}
+
+.about-me-header{
+   font-size: 20px;
+   text-align: center;
+}
+
+.description{
+  font-size: 16px;
+}
+
+.first-col{
+  text-align: left;
+}
+
+.second-col{
+  text-align: justify;
+
+}
+
+.first-col h1{
+  font-size: 20px;
+}
+
+.first-col h3{
+  font-size: 15px;
+}
+
+.myself{
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+}
