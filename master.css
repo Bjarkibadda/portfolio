@@ -4,9 +4,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Rakkas&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
+    
   }
   
   html, body {
@@ -15,7 +17,7 @@
   }
 
   html, #card-body{
-    background-color:pink;
+    background-color:black;
     height: 100%;
   }
 
@@ -205,6 +207,7 @@
   /* about me */
 
 .about-me-container{
+
     width:100%;
     height:100%;
     background: url("https://scontent.frkv2-1.fna.fbcdn.net/v/t31.0-8/12783643_10207828975620519_6928631754186507490_o.jpg?_nc_cat=107&_nc_sid=cdbe9c&_nc_ohc=JYZ97LaqhzEAX9kpKlu&_nc_ht=scontent.frkv2-1.fna&oh=4a885cbc7fd181d21b23ec8587e3d264&oe=5F94DF97") no-repeat center center fixed;
@@ -213,18 +216,25 @@
     -o-background-size: cover;
     background-size: cover;
     color:white;
-    overflow: hidden;
-    position: relative;
+    /* overflow: hidden; */
 }
 
 .about-me-text{
-  position: absolute;
+  background-color:rgba(0,0,0,0.3);
+  border: 2px solid rgba(255,255,255,0.3);
+  padding-top:20px;
+  padding-bottom: 7px;
+  /* position: absolute; */
   width: 80%;
-  top:60%;
+  top:50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   vertical-align: center;
+  border-radius: 1%;
+  position: relative;
+  top:40vh;
+  
 
   /* .vertical-center {
     margin: 0;
@@ -234,6 +244,8 @@
     transform: translateY(-50%);
   } */
 }
+
+
 
 .about-me-header{
    font-size: 20px;
@@ -245,11 +257,14 @@
 }
 
 .first-col{
-  text-align: left;
+  text-align: center;
+  border-right:solid 2px white;
+  font-family:   'Bad Script', cursive;
 }
 
 .second-col{
-  text-align: justify;
+  text-align: left;
+  font-family: 'Rajdhani', sans-serif;
 
 }
 
@@ -264,6 +279,45 @@
 .myself{
   width: 200px;
   height: 200px;
-  position: absolute;
+  position: relative;
   left: 50%;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.myself-test{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid black;
+  margin-left:40px;
+  position: relative;
+  margin-top:20px;
+  right:30px;
+}
+
+@media only screen and (max-width: 767px){
+  .myself{
+    width:150px;
+    height: 150px;
+    position: absolute;
+    margin-bottom: 40px;
+    
+  }
+
+  .about-me-text{
+    position: relative;
+    padding-bottom:140px;
+    top:400px;
+  }
+
+  .about-me-container{
+   
+    /* background: black; */
+  }
+
+  .first-col{
+    border:none;
+  }
+
 }
