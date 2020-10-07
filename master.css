@@ -224,16 +224,16 @@
   border: 2px solid rgba(255,255,255,0.3);
   padding-top:20px;
   padding-bottom: 7px;
-  /* position: absolute; */
+  position: relative;
   width: 80%;
-  top:50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left:10%; 
+  margin-top: 1%;
+  /* transform: translate(-50%, -50%); */
   text-align: center;
   vertical-align: center;
   border-radius: 1%;
-  position: relative;
-  top:40vh;
+  /* position: relative; */
+  bottom:50%;
   
 
   /* .vertical-center {
@@ -290,10 +290,31 @@
   height: 100px;
   border-radius: 50%;
   border: 1px solid black;
-  margin-left:40px;
-  position: relative;
+  margin-left:auto;
+  margin-right: auto;
+  display: block;
   margin-top:20px;
   right:30px;
+}
+
+/* contact me grid */
+.grid-container{
+  margin-top:40px;
+  display: grid;
+}
+
+.fab{
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.far{
+  font-size: 2rem;
+}
+
+.contact-me-container{
+  margin-top:20px;
+  margin-bottom: 30px;
 }
 
 @media only screen and (max-width: 767px){
@@ -305,19 +326,11 @@
     
   }
 
-  .about-me-text{
-    position: relative;
-    padding-bottom:140px;
-    top:400px;
-  }
 
-  .about-me-container{
-   
-    /* background: black; */
-  }
 
   .first-col{
     border:none;
   }
 
 }
+
