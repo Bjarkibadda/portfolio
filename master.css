@@ -24,7 +24,7 @@
 .home-page-container{
     width:100%;
     height:100%;
-    background: url("https://scontent.frkv2-1.fna.fbcdn.net/v/t31.0-8/12783643_10207828975620519_6928631754186507490_o.jpg?_nc_cat=107&_nc_sid=cdbe9c&_nc_ohc=JYZ97LaqhzEAX9kpKlu&_nc_ht=scontent.frkv2-1.fna&oh=4a885cbc7fd181d21b23ec8587e3d264&oe=5F94DF97") no-repeat center center fixed;
+    background: url("assets/background.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -176,6 +176,55 @@
     color: #f7d69d;
   }
 
+  /* card-flip */
+  .flip-card {
+    background-color: transparent;
+    width: 350px;
+    height: 400px;
+    perspective: 1000px;
+    position: relative;
+    bottom:70%;
+    left:37%;
+    border-radius: 10%;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+    border-radius: 10%;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    border-radius: 10%;
+    background-color:transparent;
+    color: black;
+  }
+  
+  .flip-card-back {
+    border-radius: 10%;
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  /* end card-flip */
+
   @media only screen and (max-height: 500px) {
     .home-page-text-container h1{
       font-size: 16px;
@@ -210,7 +259,7 @@
 
     width:100%;
     height:100%;
-    background: url("https://scontent.frkv2-1.fna.fbcdn.net/v/t31.0-8/12783643_10207828975620519_6928631754186507490_o.jpg?_nc_cat=107&_nc_sid=cdbe9c&_nc_ohc=JYZ97LaqhzEAX9kpKlu&_nc_ht=scontent.frkv2-1.fna&oh=4a885cbc7fd181d21b23ec8587e3d264&oe=5F94DF97") no-repeat center center fixed;
+    background: url("cat=107&_nc_sid=cdbe9c&_nc_ohc=JYZ97LaqhzEAX9kpKlu&_nc_ht=scontent.frkv2-1.fna&oh=4a885cbc7fd181d21b23ec8587e3d264&oe=5F94DF97") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
